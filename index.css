@@ -1,15 +1,36 @@
 body{
-	text-align:center; /* Align all items center */
-	font-family: Boogaloo;
-}
-
-
-h1{
-	text-shadow:5px 5px 5px #ddd; /* Shadow on grey */
-	font-size:40px;
-	text-decoration:underline;
-	letter-spacing:5px;
+	text-align: center; /* Align all items center */
+	font-family: Tagesschrift;
 	
 }
 
 
+h1{
+	text-shadow: 5px 5px 5px grey; /* Shadow on grey */
+	font-size: 35px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	text-transform: uppercase; /* Make uppercase */
+	
+}
+
+
+a{
+	text-decoration: none;	
+}
+
+p{
+	font-size: 20px;
+}
+
+
+ul{
+	list-style: inside;
+	display: inline-block;
+	text-align: left;
+	
+}
+
+li{
+	font-size: 20px;
+}

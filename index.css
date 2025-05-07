@@ -1,26 +1,75 @@
+/* For body */
+@font-face{
+	font-family:"zfronk_font";
+	src: url("fonts_folder/brianna.otf") format("opentype");
+}
+
+/* For headers */
+@font-face{
+	font-family:"zfronk_header";
+	src: url("fonts_folder/chill_chirp.otf") format("opentype");
+}
+
 body{
 	text-align: center; /* Align all items center */
-	font-family: Tagesschrift;
-	
+	font-family: "zfronk_font";
+	background-color:#f9f9f9; /* Beige background */
+	margin-bottom:15px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 
 h1{
 	text-shadow: 5px 5px 5px grey; /* Shadow on grey */
-	font-size: 35px;
+	font-family:"zfronk_header";
+	font-size: 55px;
+	font-weight:bolder;
 	text-decoration: none;
-	letter-spacing: 3px;
+	letter-spacing: 1.5px;
 	text-transform: uppercase; /* Make uppercase */
 	
 }
 
+h2{
+	text-decoration:underline;
+	font-family:"zfronk_header";
+	font-size:45px;
+}
+
+h3{
+	font-family:"zfronk_header";
+	text-decoration:underline;
+	font-size:45px;
+
+}
+
+h4{
+	font-family:"zfronk_header";
+	text-decoration:underline;
+	font-size:45px;
+	
+	
+}
+
+h5{
+	font-family:"zfronk_header";
+	text-decoration:underline;
+	font-size:45px;
+
+}
+
 
 a{
-	text-decoration: none;	
+	text-decoration: none;
+	font-size:25px;	
 }
 
 p{
-	font-size: 20px;
+	font-size: 28px;
+	letter-spacing:none;
 }
 
 
@@ -32,5 +81,17 @@ ul{
 }
 
 li{
-	font-size: 20px;
+	font-size: 28px;
 }
+
+
+footer{
+	display:flex;
+	flex-direction:column;
+	justify-content:end;
+	align-items:end;
+	font-size:23px;
+	margin-top:10px;
+	font-weight:bolder;
+}
+

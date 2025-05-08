@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"> <!--Allow all characters cross the broswer-->
 		<meta name="author" content="zfronk"> <!--Show author-->
 		<meta name="robots" content="index, follow"> <!--Show on the browser engine-->
-		<meta name="description" content="zfronk_portfolio">
+		<meta name="description" content="zfronk's portfolio showcasing low level programming, cybersecurity and network security">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Make flexible across all pages-->
 
 		<title>zfronk Portfolio</title>
@@ -15,7 +15,7 @@
 	<body>
 		<header>
 			<nav>
-				<ul>
+				<ul id="top_nav">
 					<li><a href="#about_me">About Me</a></li>
 					<li><a href="#passions">Passions and interests</a></li>
 					<li><a href="#projects">Projects</a></li>
@@ -53,7 +53,7 @@
 
 				<ul>
 					<li><strong>Inventory Managment System (C): </strong>Built a terminal based inventory app using file handling for data base storage.</li>
-					<li><strong>Chat Server and Client (C):</strong> Developed a basic socket-based chat system yet to supporting multiple client</li>
+					<li><strong>Chat Server and Client (C):</strong> Developed a basic terminal socket-based chat system yet to supporting multiple client.</li>
 					<li><strong>Event Planner Website (C#):</strong> Created and deployed a full-stack event planner site using ASP.NET Core and MySQL.</li>
 					<li><strong>Micro Web Server (In Progress- C):</strong> Working on a minimal HTTP web server in C using raw sockets.</li>
 				</ul>
@@ -67,6 +67,21 @@
 				<h2>Acknowledgement</h2>
 
 				<p>Thank you for visiting my portfolio, links pasted below.</p>
+			</section>
+
+			
+			<!--SECTION TO POST COMMENT-->
+			<section id="comment_section">
+				<form method="POST" action="#">
+					<label for="textarea_input">Add comment:</label>
+					<br>
+					<textarea placeholder="Add a comment!" rows="4"></textarea>
+					<br>
+					<a id="link_to_comments" href="" target="_blank">View other comments...</a>
+					<br>
+					<button id="post_comment_button" type="submit" required>POST</button>
+				</form>
+
 			</section>
 
 			

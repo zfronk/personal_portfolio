@@ -1,7 +1,11 @@
+html{
+	scroll-behavior:smooth;
+}
+
 /* For body */
 @font-face{
 	font-family:"zfronk_font";
-	src: url("fonts_folder/brianna.otf") format("opentype");
+	src: url("fonts_folder/playtime.ttf") format("truetype");
 }
 
 /* For headers */
@@ -9,6 +13,12 @@
 	font-family:"zfronk_header";
 	src: url("fonts_folder/chill_chirp.otf") format("opentype");
 }
+
+header{
+	display:flex;
+	justify-content:center;
+}
+
 
 body{
 	text-align: center; /* Align all items center */
@@ -36,29 +46,7 @@ h1{
 h2{
 	text-decoration:underline;
 	font-family:"zfronk_header";
-	font-size:45px;
-}
-
-h3{
-	font-family:"zfronk_header";
-	text-decoration:underline;
-	font-size:45px;
-
-}
-
-h4{
-	font-family:"zfronk_header";
-	text-decoration:underline;
-	font-size:45px;
-	
-	
-}
-
-h5{
-	font-family:"zfronk_header";
-	text-decoration:underline;
-	font-size:45px;
-
+	font-size:55px;
 }
 
 
@@ -95,3 +83,41 @@ footer{
 	font-weight:bolder;
 }
 
+#post_comment_button{
+	border-radius:3px;
+	border:solid 2px;	
+	font-family:"zfronk_font";
+	font-size:25px;
+	padding:10px;
+	text-shadow:2px 2px 2px grey;
+	box-shadow:2px 2px 2px grey;
+	margin:5px;
+}
+
+label{
+	font-size:30px;
+
+}
+
+
+textarea{
+	border:solid 2px;
+	font-family:"zfronk_font";
+	font-size:23px;
+	border-radius:5px;
+	width:60%;
+	padding:20px;
+
+}
+
+
+
+form{
+	margin:10px !important;
+}
+
+#link_to_comments{
+	display:inline-block;
+	margin:10px;
+	
+}

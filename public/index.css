@@ -1,126 +1,185 @@
+*{
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
 html{
 	scroll-behavior:smooth;
 }
 
 /* For body */
 @font-face{
-	font-family:"zfronk_font";
+	font-family:"body_font";
 	src: url("fonts_folder/playtime.ttf") format("truetype");
 }
 
 /* For headers */
 @font-face{
-	font-family:"zfronk_header";
-	src: url("fonts_folder/chill_chirp.otf") format("opentype");
+	font-family:"header_font";
+	src: url("fonts_folder/kid.otf") format("opentype");
 }
-
-header{
-	display:flex;
-	justify-content:center;
-}
-
-nav{
-	font-size:20px;	
-}
-
-body{
-	text-align: center; /* Align all items center */
-	font-family: "zfronk_font";
-	background-color:#f9f9f9; /* Beige background */
-	margin-bottom:30px;
-	padding-left:20px;
-	padding-right:20px;
-	padding-top:20px;
-	padding-bottom:20px;
-	
-}
-
 
 h1{
-	text-shadow: 5px 5px 5px grey; /* Shadow on grey */
-	font-family:"zfronk_header";
-	font-size: 40px;
-	font-weight:bolder;
-	text-decoration: none;
-	letter-spacing: 1.5px;
-	text-transform: uppercase; /* Make uppercase */
-	
+	font-family: "header_font";
+	text-shadow: 7px 7px 21px grey;
+	font-size: 3em;
 }
 
 h2{
-	font-family:"zfronk_header";
-	font-size:40px;
+	font-family: "header_font";
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-decoration: underline solid 5px black;
+
 }
 
+h3{
+	font-family: "header_font";
+	text-transform: uppercase;
+	font-size: 1.0em;
+
+}
+
+body{
+	text-align: center;
+	font-family: "body_font";
+	padding: 5px;
+	font-weight: bold;
+
+	background-color: #fdf6f0;
+
+}
+
+#nav_links{
+	display: block;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-weight: bolder;
+
+}
 
 a{
 	text-decoration: none;
-	font-size:20px;	
 }
 
-p{
-	font-size: 20px;
-	letter-spacing:none;
+#hero_image{
+	border: 1px solid;
+	margin: 10px;
+	border-color: black;
+	box-shadow: 5px 5px 20px grey;
+	border-radius: 50%;
+
+	float: left;
 }
 
+#introduction_section{
+	margin-top: 50px;
+}
+
+
+#intro_text{
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+#contact_button{
+	padding: 10px;
+	margin: 10px;
+
+	border: solid 2px black;
+	border-radius: 4px;
+	background-color: burlywood;
+	box-shadow: 3px 3px 12px grey;
+
+	font-family: "body_font";
+	font-weight: bold;
+}
+
+#contact_button:hover{
+	background-color: bisque;
+}
+
+table{
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-collapse: collapse;
+	box-shadow: 4px 4px 12px grey;
+}
+
+th, td{
+	border: 2px solid black;
+	padding: 5px;
+}
+
+td:hover, th:hover{
+	background-color: beige;
+	cursor: pointer;
+	box-shadow: 3px 3px 12px mintcream;
+}
+
+section{
+	margin-bottom: 30px;
+}
 
 ul{
-	list-style: inside;
-	display: inline-block;
-	text-align: left;
+	list-style: none;
+}
+
+#cards_container{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 40px;
+	justify-content: center;
+
+	padding: 20px;
+}
+
+#card_one, #card_two, #card_three, #card_four, #card_five, #card_six{
+	border: 1px solid black;
+	box-shadow: 5px 5px 15px grey;
+	border-radius: 5px;
+	padding: 10px;
+
+	width: 100%;
+}
+
+/* If screens are larger than 768px*/
+@media(min-width: 768px){
+	h1{
+		font-size: 4.0em;
+
+	}
 	
-}
+	/*Flex the whole wrapper*/
+	#layout{
+		display: flex;
+		align-items: flex-start;
 
-li{
-	font-size: 20px;
-}
+	}
 
+	#navigation_bar{
+		margin: 25px;
+		padding: 30px;
+		width: 350px;
 
-footer{
-	display:flex;
-	flex-direction:column;
-	justify-content:end;
-	align-items:end;
-	font-size:20px;
-	margin-top:10px;
-	font-weight:bolder;
-}
+		border-right: 2px solid black;
+		position: sticky;
+		top: 20px;
+	}
 
-#post_comment_button{
-	border-radius:3px;
-	border:solid 2px;	
-	font-family:"zfronk_font";
-	font-size:20px;
-	padding:10px;
-	text-shadow:2px 2px 2px grey;
-	box-shadow:2px 2px 2px grey;
-	margin:5px;
-}
-
-label{
-	font-size:20px;
-
-}
-
-
-textarea{
-	border:solid 2px;
-	font-family:"zfronk_font";
-	font-size:20px;
-	border-radius:5px;
-	width:60%;
-	padding:20px;
-
-}
-
-
-
-form{
-	margin:10px !important;
-}
-
-#link_to_comments{
-	display:inline-block;
-	margin:10px;
+	main{
+		flex-grow: 1;
+		padding: 20px;
+		text-align: center;
+	}
 	
+	hr{
+		display: none;
+	}
+
+	#hero_image{
+		width: 180px;
+		height: 180px;
+	}
 }

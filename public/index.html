@@ -1,99 +1,170 @@
-<!DOCTYPE html> <!--Act fine across all browsers you know-->
-<html lang="en"> <!--English language across all-->
-	<head>
-		<meta charset="UTF-8"> <!--Allow all characters cross the broswer-->
-		<meta name="author" content="zfronk"> <!--Show author-->
-		<meta name="robots" content="index, follow"> <!--Show on the browser engine-->
-		<meta name="description" content="zfronk's portfolio showcasing low level programming, cybersecurity and network security">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Make flexible across all pages-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="zfronk">
+	<meta name="keywords" content="Steve's portfolio, who is zfronk, Steve Aboll, personal portfolio">
+	<meta name="description" content="Steve's personal portfolio website...">
+	
+	<link rel="icon"  type="image/png" href="favi_folder/check_mark_favicon.png">
+	<link rel="stylesheet" href="index.css">	
+	<title>Steve's Portfolio | Home</title>
+</head>
 
-		<title>zfronk's Portfolio</title>
-		<link rel="stylesheet" href="index.css"> <!--Link the css file-->
-		<link rel="icon" href="favi_folder/favicon.ico" type="image/x-icon"> <!--Website favicon-->
-	</head>
+<body>
+	<!--Main header-->
+	<header>
+		<h1 style="text-transform: uppercase;">My Portfolio</h1>
 
-	<body>
+	</header>
 
-		<main>
-			<h1>Brief Overview</h1>
-			<p>Hey there Zfronk here, welcome.</p>
-			<a href="images_folder/standing_still.jpeg" download="zfronk_image.jpeg" target="_blank">"Click to view image"</a> <!--On click download image-->
+	<!--Hold the layout-->
+	<div id="layout">
+		<nav id="navigation_bar">
+			<h2>Nav Bar</h2>
+			<a href="#introduction_section" id="nav_links">Introduction</a>
+			<a href="#contacts_section" id="nav_links">Contact</a>
+			<a href="#education_section" id="nav_links">Education</a>
+			<a href="#skills_section" id="nav_links">Skills</a>
+			<a href="#tech_stack_section" id="nav_links">Tech Stack</a>
+		</nav>
 
-			<header>
-				<nav>
-					<ul id="top_nav">
-					<li><a href="#about_me">About Me</a></li>
-					<li><a href="#passions">Passions and interests</a></li>
-					<li><a href="#projects">Projects</a></li>
-					</ul>
-				</nav>
-			</header>
+		<main id="main_container">
+			<!--Image section-->
+			<hr style="margin-top: 30px; width: 170px; border:1px solid; ">
 
-			
-			<section id="about_me">
-				<h2>About Me</h2>
-				<p>Formally, I go by Steve Aboll. I am 21 years old, as of the date of publishing 6th May 2025.</p>
-				<p>I'm passionate about Cybersecurity, low level programming, Network security. Along side all this I also value building simple websites just for the hustle- It's a perfect mix for both technicality and creativity.</p>
-				<p>I believe in keeping things simple yet powerful, with the principle <strong>"Simplicity is the ultimate sophistication!"</strong></p>
-				<p>I'm commited to staying a life long student in this field with a focus on building deep skills, and NEVER chasing shortcuts. When I'm not tackling BCOM coursework, you'll find me tinkering with <strong>linux internals</strong>, <strong>programming in C</strong>, Or <strong>deepening my understanding on how computers work!</strong></p>
-				<p>Good work takes time, and I'm looking forward to how the journey unfolds step by step!</p>
+			<!--Introduction section-->
+			<section id="introduction_section">
+				<h2 style="text-decoration: none;">Hello there</h2>
+				<img id="hero_image" src="images_folder/passport.jpg" alt="Steve standing..." width="120px" height="120px">
+
+				<p id="intro_text">My name is Steve Aboll and I'm a student taking a major in BCOM Insurance. That aside, i am a self taught Web Developer from Kenya, Africa.</p>
+				<p id="intro_text">I'm very passionate about the IT field from software, hardware, and networks to security and IT support. I have a broad interest in all these areas, and I'm currently challenging myself to upskill over the next 3 months and secure a job in IT support.</p>
+					
 
 			</section>
 
-			<section id="passions">
-				<h2>Passions and Interests</h2>
-				<p>My primary passion lies in cybersecurity, where I aim to build secure systems and networks, keeping them resilient as possible from evolving threats. I also find deep fascination in low level programming particularly, C as it gives me understanding of underlining systems and how they work. I'm also interested with network security and keeping the digital world safe.</p>
-				<p>I love solving problems and constantly challenging myself to get better. I like learning new things, simplifying complicated ideas, and communicating them clearly. In my free time, I enjoy tinkering and learning, always pushing myself to grow</p>
-				<p>I also build simple websites as a hobby to improve my technical skills. It’s a fun way to mix creativity and problem-solving. I plan to keep developing these skills while working toward my career in Cybersecurity.</p>
+			<!--Contact section-->
+			<section id="contacts_section">
+				<h2 style="text-align: center;">Contacts</h2>
+				<div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+					<button id="contact_button">Linked in:<a href="https://www.linkedin.com/in/steve-aboll-897444305/" target="_blank"> Steve Aboll</a> </button>
+					<button id="contact_button">Github:<a href="https://github.com/zfronk" target="_blank"> zfronk</a></button>
+					<button id="contact_button">Email Address: <a href="" target="_blank">officialstevve@gmail.com</a></button>
+				</div>
 				
 			</section>
 
+			<!--Education section-->
+			<section id="education_section">
+				<h2>Education</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Year</th>
+							<th>Institution</th>
+							<th>Info</th>
+						</tr>
+					</thead>
 
-			<section id="projects">
-				<h2>Projects</h2>
+					<tbody>
+						<!--Maseno school-->
+						<tr>
+							<td>2018 - 2021</td>
+							<td>Maseno School</td>
+							<td>Mathematics, English, Kiswahili, Buisness Studies</td>
+						</tr>
+						
+						<!--University-->
+						<tr>
+							<td>2022 - Present</td>
+							<td>Technical University of Kenya</td>
+							<td>Bsc Insurance</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 
+			<!--Skill set section-->
+			<section id="skills_section">
+				<h2>Skill set</h2>
+				<div id="cards_container">
+					<!--Front end Dev skill-->
+					<div id="card_one">
+						<h3>Front End Development</h3>
+						<p>I craft responsive and clean UIs using HTML, CSS, and JavaScript. I focus on minimal design, accessibility, and performance, building interfaces that just make sense.</p>
+
+					</div>
+
+					<!--Backend Dvlp skill-->
+					<div id="card_two">
+						<h3>Back End Development</h3>
+						<p>I use Node.js and Express to build solid, functional server-side logic. From routing to handling requests and managing APIs, I enjoy making things work behind the scenes.</p>
+
+
+					</div>
+
+					<!--Database No SQL managment-->
+					<div id="card_three">
+						<h3>Database and Storage</h3>
+						<p>Comfortable with NoSQL (MongoDB) and flat-file storage. I understand the importance of data integrity, and I’m currently learning to design efficient schemas and handle real-world data.</p>
+
+
+					</div>
+
+					<!--Server Managment-->
+					<div id="card_four">
+						<h3>Server and Hosting</h3>
+						<p>Basic experience in deploying Node apps, setting up servers on platforms like Render and Railway. I also experiment with Linux environments and network configurations for fun.</p>
+
+
+					</div>
+
+					<!--Non verbal and Verbal skills-->
+					<div id="card_five">
+						<h3>Other Skills</h3>
+						<p>I'm a self-motivated learner, a good communicator, and someone who thrives in collaborative problem-solving. I’m constantly improving my debugging, research, and documentation skills.</p>
+
+
+					</div>
+
+					<div id="card_six">
+						<h3>Cybersecurity and Web Security</h3>
+						<p>I study how systems break and how to defend them. My current focus is Web App Security: mastering OWASP Top 10, exploiting real-world flaws like IDOR, XSS, and SSRF, and using tools like Burp Suite, ZAP, and custom JavaScript fuzzers. My goal is to build and break systems with equal understanding.</p>
+
+
+					</div>
+				</div>
+
+			</section>
+
+			<!--Tech Stack owned-->
+			<section id="tech_stack_section">
+				<h2>Tech Stack</h2>
 				<ul>
-					<li><strong>Inventory Managment System (C): </strong>Built a terminal based inventory app using file handling for data base storage.</li>
-					<li><strong>Chat Server and Client (C):</strong> Developed a basic terminal socket-based chat system yet to supporting multiple client.</li>
-					<li><strong>Event Planner Website (C#):</strong> Created and deployed a full-stack event planner site using ASP.NET Core and MySQL.</li>
-					<li><strong>Micro Web Server (In Progress- C):</strong> Working on a minimal HTTP web server in C using raw sockets.</li>
+ 					<li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
+  					<li><strong>Runtime:</strong> Node.js</li>
+  					<li><strong>Frameworks:</strong> Express.js (API Dev), working knowledge of EJS</li>
+  					<li><strong>Database:</strong> MongoDB, flat file (fs module)</li>
+  					<li><strong>Tools:</strong> Git, GitHub, Postman, Linux Terminal</li>
+  					<li><strong>Editor:</strong> Micro, Visual Studio Code (occasionally)</li>
+  					<li><strong>Other:</strong> JSON, RESTful APIs, HTTP basics, LocalStorage, JWT</li>
 				</ul>
 
-				<p>- "Targeting more network programming projects"</p>
-				
-			</section>
-
-
-			<section>
-				<h2>Acknowledgement</h2>
-
-				<p>Thank you for visiting my portfolio, links pasted below.</p>
-			</section>
-
-			
-			<!--SECTION TO POST COMMENT-->
-			<section id="comment_section">
-				<form method="POST" action="#">
-					<label for="textarea_input">Add comment:</label>
-					<br>
-					<textarea placeholder="Add a comment!" rows="4"></textarea>
-					<br>
-					<a id="link_to_comments" href="" target="_blank">View other comments...</a>
-					<br>
-					<button id="post_comment_button" type="submit" required>POST</button>
-				</form>
 
 			</section>
-
-			
+		
 		</main>
 
-		<footer>
-			<a href="https://github.com/zfronk" target="_blank">Github Account</a>
-			<a href="https://www.linkedin.com/in/steve-aboll-897444305/" target="_blank">Linked In</a>
-			<span>&copy; 2025 Zfronk, All rights reserved!</span>
-			
+
+	
+	</div>
+
+
+		<footer style="display: flex; justify-content: right;">
+			<p>Thanks for viewing my work, zfronk</p>
 		</footer>
-		
-	</body>
+	
+</body>
 </html>
